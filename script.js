@@ -12,6 +12,7 @@ $(document).ready(function() {
 
         $.get(apiUrl, function(data) {
             $('#lyrics').text(data.lyrics);
+            localStorage.setItem('lyrics', data.lyrics);
         }).fail(function() {
             alert("No song found or the name does not match. Please try again.");
         });
@@ -31,8 +32,7 @@ $(document).ready(function() {
             return;
         }
 
-        // Add translation API call here
-        // Example placeholder for translation functionality
+        // Add google translate API
         alert("Translation feature is not yet implemented.");
     });
 });
