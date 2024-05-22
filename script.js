@@ -16,4 +16,23 @@ $(document).ready(function() {
             alert("No song found or the name does not match. Please try again.");
         });
     });
+
+    $('#translate-button').click(function() {
+        let lyrics = $('#lyrics').text().trim();
+        let language = $('#language').val();
+
+        if (lyrics === "") {
+            alert("Please search for lyrics first.");
+            return;
+        }
+
+        if (language === null) {
+            alert("Please select a language.");
+            return;
+        }
+
+        // Add translation API call here
+        // Example placeholder for translation functionality
+        alert("Translation feature is not yet implemented.");
+    });
 });

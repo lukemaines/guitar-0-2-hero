@@ -16,11 +16,11 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.search-box {
+.search-box, .translate-box {
     margin-bottom: 20px;
 }
 
-input {
+input, select {
     padding: 10px;
     margin: 5px;
     border: 1px solid #ddd;
@@ -50,6 +50,6 @@ button:hover {
     max-width: 600px;
     margin: 0 auto;
     white-space: pre-wrap;
-    max-height: 400px; /* Adjust the max-height as needed */
+    max-height: 400px;
     overflow-y: auto;
 }
