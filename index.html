@@ -15,14 +15,14 @@
 </head>
 
 <body>
-    <div class="container">
+    <div class="container" >
         <h1>Lyrics Swap</h1>
         <div class="search-box">
             <input type="text" id="artist" placeholder="Enter artist name">
             <input type="text" id="title" placeholder="Enter song title">
             <button id="search-button">Search Lyrics</button>
         </div>
-        <div class="translate-box">
+        <div class="translate-box" id="googleTranslateElement">
             <select id="language">
                 <option value="" disabled selected>Select Language</option>
                 <option value="fr">French</option>
@@ -39,6 +39,15 @@
         </div>
     </div>
     <script src="script.js"></script>
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script>
+        function googleTranslateElementInit(){
+            new google.translate.TranslateElement(
+                {pageLanguage: "en"},
+                'googleTranslateElement'
+            );
+        }
+    </script>
 </body>
 
 </html>
