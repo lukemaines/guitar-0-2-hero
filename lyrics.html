@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lyrics History</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Lyrics History</h1>
+        <div id="history-container" class="search-box"></div>
+    </div>
+    <div id="lyrics-popup" class="lyrics-box" style="display:none;">
+        <h2 id="popup-title"></h2>
+        <pre id="popup-lyrics"></pre>
+        <button id="translate-button">Translate Lyrics</button>
+        <div id="googleTranslateElement"></div>
+    </div>
+    <script>
+        $(document).ready(function() {
+            let lyricsHistory = JSON.parse(localStorage.getItem('lyricsHistory'));
+            let historyContainer = $('#history-container');
+
+            lyricsHistory.forEach((item, index) => {
+                let card = $(`
+                    <div class="task-card" data-index="${index}">
+                        <h3>${item.artist} - ${item.title}</h3>
+                    </div>
+                `);
+                historyContainer.append(card);
+            });
+
+            $('.task-card').click(function() {
+                let index = $(this).data('index');
+                let item = lyricsHistory[index];
+
+                $('#popup-title').text(`${item.artist} - ${item.title}`);
+                $('#popup-lyrics').text(item.lyrics);
+                $('#lyrics-popup').show();
+            });
+
+            $('#translate-button').click(function(event) {
+                event.preventDefault();
+                loadGoogleTranslate();
+            });
+
+            $('#lyrics-popup').click(function() {
+                $(this).hide();
+            });
+        });
+
+        function loadGoogleTranslate() {
+            if (!document.getElementById('googleTranslateScript')) {
+                let script = document.createElement('script');
+                script.id = 'googleTranslateScript';
+                script.src = "https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit";
+                document.body.appendChild(script);
+            } else {
+                googleTranslateElementInit();
+            }
+        }
+
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement(
+                { pageLanguage: "en" },
+                'googleTranslateElement'
+            );
+        }
+    </script>
+</body>
+
+</html>
