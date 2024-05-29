@@ -19,17 +19,29 @@
 
 <body>
     <div class="container" id="googleTranslateElement">
-        <h1>Lyrics Swap</h1>
+        <h1 class="notranslate">Lyrics Swap</h1>
+        
+        <!-- Urban Dictionary Section -->
         <div class="search-box">
+            <h2>Find Definitions</h2>
+            <input type="text" id="trickyWord" placeholder="Enter tricky word">
+            <button class="notranslate" id="search-tricky">Get the Definition</button>
+        </div>
+
+        <!-- Lyrics Search Section -->
+        <div class="search-box">
+            <h2>Search Lyrics</h2>
             <input type="text" id="artist" placeholder="Enter artist name">
             <input type="text" id="title" placeholder="Enter song title">
-            <button id="search-button">Search Lyrics</button>
-            <button id="history-button">Search History</button>
+            <button class="notranslate" id="search-button">Search Lyrics</button>
+            <button class="notranslate" id="history-button">Search History</button>
         </div>
+        
         <div class="lyrics-box">
             <pre id="lyrics"></pre>
         </div>
     </div>
+
     <footer>
         <div class="container">
             <div class="accordion text-center" id="accordionExample">
@@ -103,6 +115,36 @@
                 'googleTranslateElement'
             );
         }
+
+        // Urban Dictionary functionality
+        $(document).ready(function () {
+            $('#search-tricky').click(function () {
+                let trickyWord = $('#trickyWord').val().trim();
+
+                if (trickyWord === "") {
+                    alert("Please enter a tricky word.");
+                    return;
+                }
+
+                const url = `https://mashape-community-urban-dictionary.p.rapidapi.com/define?term=${trickyWord}`;
+                const options = {
+                    method: 'GET',
+                    headers: {
+                        'X-RapidAPI-Key': '5930eedbdemshc80d00e2742e6f3p162a3ejsna836c0d43ba8',
+                        'X-RapidAPI-Host': 'mashape-community-urban-dictionary.p.rapidapi.com'
+                    }
+                };
+
+                fetch(url, options)
+                    .then(response => response.json())
+                    .then(response => {
+                        let term = response.list[0];
+                        let answer = term.definition;
+                        alert(answer);
+                    })
+                    .catch(err => console.error(err));
+            });
+        });
     </script>
 </body>
 
