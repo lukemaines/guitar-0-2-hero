@@ -1,6 +1,7 @@
 
 const definitionEl = $('.definition1');
 
+
 $(document).ready(function () {
   // get the data entered by the user and store it
   $('#search-tricky').click(function () {
@@ -40,9 +41,9 @@ $(document).ready(function () {
 
         // set the definition to a variable and create a <p> and append to page
         let answer = term.definition;
-        let definitionText = $('<p>');
-        definitionText.text(answer);
-        definitionEl.append(definitionText);
+        
+        definitionEl.text(answer);
+       // definitionEl.append(definitionText);
       })
       .catch(err => console.error(err));
 
