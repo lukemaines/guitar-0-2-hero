@@ -86,3 +86,30 @@ button:hover {
     max-height: 400px;
     overflow-y: auto;
 }
+.task-card {
+  background: #f9f9f9;
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.task-card h3 {
+  margin: 0;
+}
+
+#lyrics-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  max-width: 600px;
+  max-height: 400px;
+  overflow-y: auto;
+  z-index: 1000;
+}
