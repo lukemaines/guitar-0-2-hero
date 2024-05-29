@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Danfo&family=Freehand&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik+Bubbles&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Danfo&family=Freehand&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900&family=Rubik+Bubbles&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -77,6 +77,16 @@
             <div class="lyrics-box">
                 <pre id="lyrics"></pre>
             </div>
+    <div class="container" id="googleTranslateElement">
+        <h1>Lyrics Swap</h1>
+        <div class="search-box">
+            <input type="text" id="artist" placeholder="Enter artist name">
+            <input type="text" id="title" placeholder="Enter song title">
+            <button id="search-button">Search Lyrics</button>
+            <button id="history-button">Search History</button>
+        </div>
+        <div class="lyrics-box">
+            <pre id="lyrics"></pre>
         </div>
     </div>
     
@@ -145,7 +155,15 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
     <script src="script.js"></script>
-
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script>
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement(
+                { pageLanguage: "en" },
+                'googleTranslateElement'
+            );
+        }
+    </script>
 </body>
 
 </html>
