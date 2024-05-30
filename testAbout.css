@@ -1,0 +1,64 @@
+/* color variables */
+:root {
+  --mainBlue: #3D52AD;
+  --midBlue: #7091E6;
+  --paleBlue: #8697C4;
+  --lightBlue: #ADBBDA;
+  --white: #EDEBF5;
+}
+
+
+
+
+
+body {
+  background-color:var(--mainBlue);
+  color: var(--mainBlue);
+}
+
+main {
+  background-color: var(--paleBLue);
+  width: 100%;
+}
+
+
+
+.card {
+  background-color: var(--lightBlue);
+  border-radius: 5px;
+  border: 2px solid var(--mainBlue);
+  padding: 2%;
+  margin: 5%;
+  align-content: center;
+  align-items: center;
+  height: auto;
+
+}
+
+.card-img-top {
+  max-height: 50%;
+  max-width: 50%;
+  border-radius: 100%;
+}
+
+.socials {
+  display: inline-block;
+  background-color: var(--paleBLue);
+  padding: 2%;
+}
+.social-icon {
+  max-width: 10%;
+  max-height: 10%;
+  margin: 4px;
+} 
+
+.about-header {
+  font-size: 66px;
+  color: white;
+  text-align: center;
+  margin: 12px;
+}
+
+.title {
+  font-size: 55px;
+}
