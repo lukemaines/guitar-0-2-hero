@@ -38,3 +38,18 @@ $(document).ready(function() {
         alert("Translation feature is not yet implemented.");
     });
 });
+
+// for touchscreens
+    $('search-box').on('touchstart'), function() {
+        $(this).focus();
+    }
+    $('title').on('touchstart'), function() {
+        $(this).focus();
+    }
+    $('artist').on('touchstart'), function() {
+        $(this).focus();
+    }
+
+    $('search-box').on('touchstart'), function() {
+        $(this).focus();
+    }
