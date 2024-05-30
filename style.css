@@ -129,3 +129,14 @@ a:hover {
   overflow-y: auto;
   z-index: 1000;
 }
+
+.accordion-item:nth-child(3) h2 {
+  border-bottom: 1px solid #ddd;
+  padding-left: 0px;
+  margin-left: 0px;
+}
+
+.accordion-item:nth-child(2) h2 {
+  padding-right: 0px;
+  margin-right: 0px;
+} 
