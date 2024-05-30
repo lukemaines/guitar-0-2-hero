@@ -1,4 +1,13 @@
-/* .roboto-regular */ 
+/* color variables */
+:root {
+  --mainBlue: #3D52AD;
+  --midBlue: #7091E6;
+  --paleBlue: #8697C4;
+  --lightBlue: #ADBBDA;
+  --white: #EDEBF5;
+
+
+}/* .roboto-regular */ 
 * { 
     font-family: "Roboto", sans-serif;
     font-weight: 400;
@@ -9,6 +18,7 @@
     font-family: "Roboto", sans-serif;
     font-weight: 700;
     font-style: normal;
+    color: var(--mainBlue);
   }
 
 .rubik-bubbles-regular {
@@ -31,9 +41,14 @@
     font-variation-settings:
       "ELSH" 0;
   }
+
+
+
+
+
 body {
     /* font-family: Arial, sans-serif; */
-    background-color: #f2f2f2;
+    background-color: var(--white);
     /* display: flex; */
     /* justify-content: center;
     align-items: center; */
@@ -43,10 +58,14 @@ body {
 
 .container {
     text-align: center;
-    background: #fff;
+    background: var(--paleBlue);
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container-fluid {
+  background-color: var(--paleBlue);
 }
 
 .search-box, .translate-box {
@@ -56,7 +75,7 @@ body {
 input, select {
     padding: 10px;
     margin: 5px;
-    border: 1px solid #ddd;
+    border: 1px solid var(--white);
     border-radius: 4px;
     width: 200px;
 }
@@ -64,14 +83,14 @@ input, select {
 button {
     padding: 10px 20px;
     border: none;
-    background-color: #28a745;
-    color: #fff;
+    background-color: var(--mainBlue);
+    color: var(--white);
     border-radius: 4px;
     cursor: pointer;
 }
 
 button:hover {
-    background-color: #218838;
+    background-color: var(--midBlue);
 }
 
 a {
@@ -80,7 +99,7 @@ a {
 }
 
 a:hover {
-  background-color: #c6cdc6;
+  background-color: var(--paleBlue);
   border-radius: 20px;
   padding: 5px;
   
@@ -88,13 +107,15 @@ a:hover {
 
 .navbar {
   margin-bottom: 100px;
+  background-color: var(--paleBlue);
+  color: var(--mainBlue);
 }
 
 .lyrics-box {
     text-align: left;
-    background: #f9f9f9;
+    background: var(--white);
     padding: 20px;
-    border: 1px solid #ddd;
+    border: 1px solid var(--white);
     border-radius: 4px;
     max-width: 600px;
     margin: 0 auto;
@@ -103,10 +124,10 @@ a:hover {
     overflow-y: auto;
 }
 .task-card {
-  background: #f9f9f9;
+  background: var(--paleBlue);
   padding: 10px;
   margin: 10px;
-  border: 1px solid #ddd;
+  border: 1px solid var(--white);
   border-radius: 4px;
   cursor: pointer;
 }
@@ -120,7 +141,7 @@ a:hover {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: white;
+  background: var(--paleBlue);
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);

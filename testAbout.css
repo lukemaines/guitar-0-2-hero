@@ -12,12 +12,13 @@
 
 
 body {
-  background-color:var(--mainBlue);
+  background-color: var(--lightBlue);
   color: var(--mainBlue);
+  
 }
 
 main {
-  background-color: var(--paleBLue);
+  background-color: var(--lightBLue);
   width: 100%;
 }
 
@@ -54,7 +55,7 @@ main {
 
 .about-header {
   font-size: 66px;
-  color: white;
+  color: var(--mainBlue);
   text-align: center;
   margin: 12px;
 }
