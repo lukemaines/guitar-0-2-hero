@@ -113,6 +113,12 @@ a:hover {
   margin-bottom: 100px;
   background-color: var(--paleBlue);
   color: var(--mainBlue);
+  padding: 0px;
+}
+
+.navbar-brand {
+  font-family: "Danfo";
+  font-size: 31px;
 }
 
 .lyrics-box {
