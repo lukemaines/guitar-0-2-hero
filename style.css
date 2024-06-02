@@ -124,13 +124,6 @@ a:hover {
   font-size: 31px;
 }
 
-.navbar-fixed-top {
-  height: 40px; /* Set the desired navbar height to allow for logo img*/
-}
-.navbar img {
-  height: 45px; /* Match the image height to the navbar height */
-}
-
 .lyrics-box {
     text-align: left;
     background: var(--white);
@@ -190,41 +183,6 @@ a:hover {
   margin-left: 0px;
   margin-right: 0px;
 }
-<<<<<<< HEAD
-
-
-.container-about {
-  text-align: center;
-  background: var(--white);
-  padding: 20px;
-  margin: 25px;
-  border-radius: 8px;
-  align-items: center;
-
-}
-
-.aboutUsStory {
-  align-items: left;
-  background: var(--paleBlue);
-  color: var(--mainBlue)
-  padding: 50px;
-  margin: 50px;
-  border-radius: 25px;
-  align-items: center;
-
-}
-.aboutUsStory p {
-  text-align: left;
-  margin: 25px;
-  
-
-}
-#img-about {
-  align-items: center;
-  width: 200px;
-  height: 200px;
-}
-=======
 .lyrics-container {
   display: flex;
   justify-content: space-between;
@@ -259,4 +217,3 @@ a:hover {
   background-color: var(--darkModeBackground);
   color: var(--white);
 }
->>>>>>> 70b0f7f1764cbf9967a85b61bd0efe449e488799
