@@ -5,6 +5,7 @@
   --paleBlue: #8697C4;
   --lightBlue: #ADBBDA;
   --white: #EDEBF5;
+  --darkModeBackground: rgb(36, 36, 36);
 
 
 }/* .roboto-regular */ 
@@ -59,9 +60,12 @@ body {
 .container {
     text-align: center;
     background: var(--paleBlue);
-    padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 100px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .container-fluid {
@@ -81,7 +85,7 @@ input, select {
 }
 
 button {
-    padding: 10px 20px;
+    padding: 10px 10px;
     border: none;
     background-color: var(--mainBlue);
     color: var(--white);
@@ -107,8 +111,17 @@ a:hover {
 
 .navbar {
   margin-bottom: 100px;
+  width: 100vw;
   background-color: var(--paleBlue);
   color: var(--mainBlue);
+  padding: 0px;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.navbar-brand {
+  font-family: "Danfo";
+  font-size: 31px;
 }
 
 .navbar-fixed-top {
@@ -177,6 +190,7 @@ a:hover {
   margin-left: 0px;
   margin-right: 0px;
 }
+<<<<<<< HEAD
 
 
 .container-about {
@@ -210,3 +224,39 @@ a:hover {
   width: 200px;
   height: 200px;
 }
+=======
+.lyrics-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.lyrics-box {
+  background: var(--white);
+  padding: 20px;
+  border: 1px solid var(--mainBlue);
+  border-radius: 8px;
+  width: 48%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+.btn-dark {
+  margin-left: 75%;
+
+}
+
+.dark-mode {
+  background-color: var(--darkModeBackground);
+  color: var(--white);
+}
+
+.container-fluid .dark-mode {
+  background-color: rgb(36, 36, 36);
+  color: var(--white);
+}
+
+.navbar.dark-mode, .container.dark-mode {
+  background-color: var(--darkModeBackground);
+  color: var(--white);
+}
+>>>>>>> 70b0f7f1764cbf9967a85b61bd0efe449e488799
