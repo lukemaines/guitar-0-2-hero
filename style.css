@@ -111,6 +111,13 @@ a:hover {
   color: var(--mainBlue);
 }
 
+.navbar-fixed-top {
+  height: 40px; /* Set the desired navbar height to allow for logo img*/
+}
+.navbar img {
+  height: 45px; /* Match the image height to the navbar height */
+}
+
 .lyrics-box {
     text-align: left;
     background: var(--white);
@@ -169,4 +176,37 @@ a:hover {
 .row {
   margin-left: 0px;
   margin-right: 0px;
+}
+
+
+.container-about {
+  text-align: center;
+  background: var(--white);
+  padding: 20px;
+  margin: 25px;
+  border-radius: 8px;
+  align-items: center;
+
+}
+
+.aboutUsStory {
+  align-items: left;
+  background: var(--paleBlue);
+  color: var(--mainBlue)
+  padding: 50px;
+  margin: 50px;
+  border-radius: 25px;
+  align-items: center;
+
+}
+.aboutUsStory p {
+  text-align: left;
+  margin: 25px;
+  
+
+}
+#img-about {
+  align-items: center;
+  width: 200px;
+  height: 200px;
 }

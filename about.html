@@ -1,139 +1,184 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About - Lyric Swap</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Danfo&family=Freehand&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik+Bubbles&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About - Lyric Swap</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Danfo&family=Freehand&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik+Bubbles&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
+
 <body>
-    <header>
-        <nav class="navbar fixed-top">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="index.html">Lyric Swap</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                <div class="offcanvas-header">
-                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Lyric Swap</h5>
-                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                    <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="/lyrics.html">Song</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/contact.html">Contact</a>
-                    </li>
-                  </ul>
-                  <form class="d-flex mt-3" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                  </form>
-                </div>
-              </div>
-            </div>
-          </nav>
-    </header>
-    <main>
-
-      <div class="col-sm-12 col-md-4">
-        <div class="card">
-          <img class="card-img-top" src="assets\leemer.jpg" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title roboto-bold">Kim Desveaux</h5>
-            <p class="card-text">Use this area to write 3 sentences about you.</p>
-            <p class="card-text"><small class="text-muted">Finish with a fun fact</small></p>
-
-            <div class="socials">
-              <a href="https://www.facebook.com/kim.desveaux.50" title="facebook icons"><img class="social-icon" src="assets\facebook.png"
-                  alt="Facebook icons created by Mayor Icons - Flaticon"></a>
-
-              <a href="assets\instagram.png" title="instagram logo icons"><img class="social-icon"
-                  src="assets\instagram.png" alt="Instagram logo icons created by Rakib Hassan Rahim - Flaticon"></a>
-
-              <a href="assets\linkedin.png" title="linkedin icons"><img class="social-icon" src="assets\linkedin.png"
-                  alt="Linkedin icons created by Freepik - Flaticon"></a>
-
-              <a href="assets\github-logo.png" title="github icons"><img class="social-icon"
-                  src="assets\github-logo.png" alt="Cat icons created by Dave Gandy - Flaticon"></a>
-            </div>
+  <header>
+    <nav class="navbar fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <img src="assets\lyricswap.png" alt="Lyric Swap Logo"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Lyric Swap</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/lyrics.html">Song</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/contact.html">Contact</a>
+              </li>
+            </ul>
+            <form class="d-flex mt-3" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
           </div>
         </div>
-
-
-
-
-
-
-        
-    </main>
-
-    <br>
-
-    <footer>
-      <div class="accordion accordion-flush mt-3 container text-center row" id="accordionFlushExample">
-          <div class="accordion-item col">
-              <h2 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                      data-bs-target="#flush-collapseOne" aria-expanded="false"
-                      aria-controls="flush-collapseOne">
-                      Copyright
-                  </button>
-              </h2>
-              <div id="flush-collapseOne" class="accordion-collapse collapse"
-                  data-bs-parent="#accordionFlushExample">
-                  <div class="accordion-body">Placeholder content for this accordion, which is intended to
-                      demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion
-                      body.</div>
-              </div>
-          </div>
-          <div class="accordion-item col">
-              <h2 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                      data-bs-target="#flush-collapseTwo" aria-expanded="false"
-                      aria-controls="flush-collapseTwo">
-                      Disclaimer
-                  </button>
-              </h2>
-              <div id="flush-collapseTwo" class="accordion-collapse collapse"
-                  data-bs-parent="#accordionFlushExample">
-                  <div class="accordion-body">Placeholder content for this accordion, which is intended to
-                      demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion
-                      body. Let's imagine this being filled with some actual content.</div>
-              </div>
-          </div>
-          <div class="accordion-item col">
-              <h2 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                      data-bs-target="#flush-collapseThree" aria-expanded="false"
-                      aria-controls="flush-collapseThree">
-                      Privacy
-                  </button>
-              </h2>
-              <div id="flush-collapseThree" class="accordion-collapse collapse"
-                  data-bs-parent="#accordionFlushExample">
-                  <div class="accordion-body">Placeholder content for this accordion, which is intended to
-                      demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion
-                      body. Nothing more exciting happening here in terms of content, but just filling up the
-                      space to make it look, at least at first glance, a bit more representative of how this
-                      would look in a real-world application.</div>
-              </div>
-          </div>
       </div>
+    </nav>
+  </header>
+  <main>
+
+    <div class="col">
+      <div class="container-about">
+        <img id="img-about" src="assets\globe.png" alt="Lyric Swap Logo">
+
+           <br><br>
+          <h3 class="roboto-bold">About Lyric Swap</h3>
+          <h3 class="roboto-bold">Rhapsody Hollow’s Harmony</h3>
+
+          <div class="aboutUsStory roboto-bold">
+<br>
+
+            <p>
+              Once upon a time, there existed the mysterious realm of Rhapsody Hollow, where shadows danced to the
+              rhythm of forgotten songs. Yet, a sinister threat was in the
+              air as the echoes of misinterpreted words led to misunderstandings, casting a pallor over the land.</p>
+            <p>
+              Every day, the townsfolk would gather to sing along to their
+              favorite tunes, but their joy was lost with the misunderstood language and lyrics. Bit by bit the
+              spirit of those very townsfolk was eroding as the deeper meaning of their beloved songs escaped them.
+              One enchanted evening, as the once harmonious atmosphere was
+              now tinged with unease, the citizens of Rhapsody Hollow realized the village, once a haven of peace and
+              tranquility, now teetered on the
+              edge of discord. Something had to be done.
+              In the midst of this mystical turmoil, the paths of we three strangers converged. United by fate and a
+              shared vision, we formed the Mystic Developers Syndicate. This collaboration would soon be the catalyst
+              for change.</p>
+            <p>
+              Luke the wordsmith, Jerriet the
+              sorcerer of code, and Kim the keeper
+              of cryptic memes would soon summon
+              enchantments powerful enough to dispel the lyrical confusion and weave modern slang into ancient ballads.
+            </p>
+            <p>
+              This encantation, titled LyricSwag, would now:
+            <p>
+              <b>Summon:</b> Yes, summon the lyrics of any English song with but a few incantations.
+            </p>
+            <p>
+              <b>Translate:</b> yes, transmute these lyrics so all might sing in harmony and grasp the song's essence,
+              irrespective of their native dialect.
+            </p>
+            <p>
+              <b>Search:</b> Infuse an element of dark whimsy with a charm to unveil any word's meaning thus, aiding all
+              in
+              their mastery of slang.
+            </p>
+            <p>
+              Because of that, our working sessions morphed into a sanctum of innovation where coding mingled with
+              incantations. Amidst the chaotic symphony of laughter and shadows, we envisioned mortals from all realms –
+              scholars, wanderers, language enthusiasts, and music aficionados – all delighting in our creation,
+              connecting, understanding, and reveling in lyrics.</p>
+            <p>
+              The citizens could now sing and enjoy songs from all corners of the realm.
+            <p>
+            <h5><b>The Future</b></h5>
+            <p>
+              Yes, with the unveiling of this enchanted solution, we have illuminated but a single facet of the cosmic
+              tapestry. Alas, let it be known that tranquility remains elusive, for within the vast expanse of this
+              mystical realm, unseen perils lie in wait.
+              Behold, the ancient collections, shrouded in the mists of time, beckon for our scrutiny as we pledge to
+              curate the collections of the ages and embark on a greater journey of translation, transmuting their
+              secrets into all languages known to mortal minds. And we will make these accessible to all via many modes
+              of transmission.</p>
+            <p>
+              And now we ask you to join us in this lyrical odyssey to make every song a universal incantation and
+              spread peace, harmony and mutual understanding throughout the realm! For a mere investment of 7,000
+              Etherium Crystals you can join us as equal partner in our quest to make Lyric Swap and the Mystic
+              Developers Syndicate the supreme masters of language and art in the realm ensuring that harmony shall
+              reign supreme in this enchanted realm." </p>
+
+          </div>
+        </div>
+      </div>
+
+
+  </main>
+
+  <br>
+
+  <footer>
+    <div class="accordion accordion-flush mt-3 container text-center row" id="accordionFlushExample">
+      <div class="accordion-item col">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+            Copyright
+          </button>
+        </h2>
+        <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">Placeholder content for this accordion, which is intended to
+            demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion
+            body.</div>
+        </div>
+      </div>
+      <div class="accordion-item col">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+            Disclaimer
+          </button>
+        </h2>
+        <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">Placeholder content for this accordion, which is intended to
+            demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion
+            body. Let's imagine this being filled with some actual content.</div>
+        </div>
+      </div>
+      <div class="accordion-item col">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+            Privacy
+          </button>
+        </h2>
+        <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">Placeholder content for this accordion, which is intended to
+            demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion
+            body. Nothing more exciting happening here in terms of content, but just filling up the
+            space to make it look, at least at first glance, a bit more representative of how this
+            would look in a real-world application.</div>
+        </div>
+      </div>
+    </div>
   </footer>
-  
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>
-
-
