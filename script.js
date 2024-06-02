@@ -33,23 +33,44 @@ $(document).ready(function() {
         window.location.href = 'lyrics.html';
     });
 
-    // Translation functionality (placeholder)
+    // Translation functionality
     $('#translate-button').click(function() {
-        alert("Translation feature is not yet implemented.");
+        const text = $('#lyrics').text();
+        const targetLanguage = $('#targetLanguage').val();
+
+        const apiKey = 'be389a3284mshd6b20937aec1273p1c3615jsnf8374f55d7c8';
+        const apiHost = 'deep-translate1.p.rapidapi.com';
+
+        fetch(`https://deep-translate1.p.rapidapi.com/language/translate/v2`, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'X-RapidAPI-Key': apiKey,
+                'X-RapidAPI-Host': apiHost
+            },
+            body: JSON.stringify({
+                q: text,
+                target: targetLanguage
+            })
+        })
+        .then(response => response.json())
+        .then(data => {
+            const translatedText = data.data.translations.translatedText;
+            $('#translatedLyrics').text(translatedText);
+        })
+        .catch(error => {
+            console.error('Error:', error);
+        });
+    });
+
+    // for touchscreens
+    $('.search-box').on('touchstart', function() {
+        $(this).focus();
+    });
+    $('#title').on('touchstart', function() {
+        $(this).focus();
+    });
+    $('#artist').on('touchstart', function() {
+        $(this).focus();
     });
 });
-
-// for touchscreens
-    $('search-box').on('touchstart'), function() {
-        $(this).focus();
-    }
-    $('title').on('touchstart'), function() {
-        $(this).focus();
-    }
-    $('artist').on('touchstart'), function() {
-        $(this).focus();
-    }
-
-    $('search-box').on('touchstart'), function() {
-        $(this).focus();
-    }
