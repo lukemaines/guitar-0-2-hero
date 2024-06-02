@@ -5,6 +5,7 @@
   --paleBlue: #8697C4;
   --lightBlue: #ADBBDA;
   --white: #EDEBF5;
+  --darkModeBackground: rgb(36, 36, 36);
 
 
 }/* .roboto-regular */ 
@@ -107,9 +108,12 @@ a:hover {
 
 .navbar {
   margin-bottom: 100px;
+  width: 100vw;
   background-color: var(--paleBlue);
   color: var(--mainBlue);
   padding: 0px;
+  display: flex;
+  flex-wrap: nowrap;
 }
 
 .navbar-brand {
@@ -175,4 +179,24 @@ a:hover {
 .row {
   margin-left: 0px;
   margin-right: 0px;
+}
+
+.btn-dark {
+  margin-left: 75%;
+
+}
+
+.dark-mode {
+  background-color: var(--darkModeBackground);
+  color: var(--white);
+}
+
+.container-fluid .dark-mode {
+  background-color: rgb(36, 36, 36);
+  color: var(--white);
+}
+
+.navbar.dark-mode, .container.dark-mode {
+  background-color: var(--darkModeBackground);
+  color: var(--white);
 }

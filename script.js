@@ -53,3 +53,19 @@ $(document).ready(function() {
     $('search-box').on('touchstart'), function() {
         $(this).focus();
     }
+
+
+
+
+    $(document).ready(function() {
+        const $darkModeBtn = $('.btn.btn-dark');
+        const $body = $('body');
+
+        $darkModeBtn.on('click', function() {
+            $body.toggleClass('dark-mode');
+            const isDarkMode = $body.hasClass('dark-mode');
+            $darkModeBtn.text(isDarkMode ? 'Light' : 'Dark');
+        });
+    });
+
+    
