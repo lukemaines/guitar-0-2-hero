@@ -27,7 +27,7 @@ $(document).ready(function() {
             alert("No song found or the name does not match. Please try again.");
         });
     });
-
+});
     // Redirect to lyrics.html when history button is clicked
     $('#history-button').click(function() {
         window.location.href = 'lyrics.html';
@@ -72,12 +72,9 @@ $(document).ready(function() {
     });
     $('#artist').on('touchstart', function() {
         $(this).focus();
-    }
+    });
 
-    $('search-box').on('touchstart'), function() {
-        $(this).focus();
-    }
-
+    
 
 
 
