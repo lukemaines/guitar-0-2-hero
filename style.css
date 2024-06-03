@@ -57,13 +57,12 @@ body {
     margin-top: 70px;
 }
 
-.container {
+.contBody {
     text-align: center;
     background: var(--paleBlue);
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin-top: 100px;
-    max-width: 800px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -111,7 +110,7 @@ a:hover {
 
 .navbar {
   margin-bottom: 100px;
-  width: 100vw;
+  /* width: 100vw; */
   background-color: var(--paleBlue);
   color: var(--mainBlue);
   padding: 0px;
@@ -122,6 +121,11 @@ a:hover {
 .navbar-brand {
   font-family: "Danfo";
   font-size: 31px;
+}
+
+.nav-img {
+  width: 220px;
+  height: 50px;
 }
 
 .lyrics-box {
@@ -186,10 +190,11 @@ a:hover {
 .lyrics-container {
   display: flex;
   justify-content: space-between;
+  
 }
 
 .lyrics-box {
-  background: var(--white);
+  background: var(--midBlue);
   padding: 20px;
   border: 1px solid var(--mainBlue);
   border-radius: 8px;
@@ -198,6 +203,39 @@ a:hover {
   margin-top: 20px;
 }
 
+
+
+.container-about {
+  text-align: center;
+  background: var(--white);
+  padding: 20px;
+  margin: 25px;
+  border-radius: 8px;
+  align-items: center;
+
+}
+
+.aboutUsStory {
+  align-items: left;
+  background: var(--paleBlue);
+  color: var(--mainBlue);
+  padding: 50px;
+  margin: 50px;
+  border-radius: 25px;
+  align-items: center;
+
+}
+.aboutUsStory p {
+  text-align: left;
+  margin: 25px;
+  
+}
+#img-about {
+  align-items: center;
+  width: 200px;
+  height: 200px;
+
+}
 .btn-dark {
   margin-left: 75%;
 
@@ -210,10 +248,10 @@ a:hover {
 
 .container-fluid .dark-mode {
   background-color: rgb(36, 36, 36);
-  color: var(--white);
+  
 }
 
 .navbar.dark-mode, .container.dark-mode {
   background-color: var(--darkModeBackground);
-  color: var(--white);
+  
 }
