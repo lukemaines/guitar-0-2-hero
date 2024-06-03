@@ -6,94 +6,92 @@
   --lightBlue: #ADBBDA;
   --white: #EDEBF5;
   --darkModeBackground: rgb(36, 36, 36);
+}
 
+/* .roboto-regular */
+* {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
 
-}/* .roboto-regular */ 
-* { 
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-
-  .roboto-bold {
-    font-family: "Roboto", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    color: var(--mainBlue);
-  }
+.roboto-bold {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: var(--mainBlue);
+}
 
 .rubik-bubbles-regular {
-    font-family: "Rubik Bubbles", system-ui;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-  .freehand-regular {
-    font-family: "Freehand", cursive;
-    font-weight: 400;
-    font-style: normal;
-  }
+  font-family: "Rubik Bubbles", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
 
-  .danfo {
-    font-family: "Danfo", serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    font-variation-settings:
-      "ELSH" 0;
-  }
+.freehand-regular {
+  font-family: "Freehand", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
 
-
-
-
+.danfo {
+  font-family: "Danfo", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "ELSH" 0;
+}
 
 body {
-    /* font-family: Arial, sans-serif; */
-    background-color: var(--white);
-    /* display: flex; */
-    /* justify-content: center;
+  /* font-family: Arial, sans-serif; */
+  background-color: var(--white);
+  /* display: flex; */
+  /* justify-content: center;
     align-items: center; */
-    height: 100vh;
-    margin-top: 70px;
+  height: 100vh;
+  margin-top: 70px;
 }
 
 .contBody {
-    text-align: center;
-    background: var(--paleBlue);
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-top: 100px;
-    margin-left: auto;
-    margin-right: auto;
+  text-align: center;
+  background: var(--paleBlue);
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .container-fluid {
   background-color: var(--paleBlue);
 }
 
-.search-box, .translate-box {
-    margin-bottom: 20px;
+.search-box,
+.translate-box {
+  margin-bottom: 20px;
 }
 
-input, select {
-    padding: 10px;
-    margin: 5px;
-    border: 1px solid var(--white);
-    border-radius: 4px;
-    width: 200px;
+input,
+select {
+  padding: 10px;
+  margin: 5px;
+  border: 1px solid var(--white);
+  border-radius: 4px;
+  width: 200px;
 }
 
 button {
-    padding: 10px 10px;
-    border: none;
-    background-color: var(--mainBlue);
-    color: var(--white);
-    border-radius: 4px;
-    cursor: pointer;
+  padding: 10px 10px;
+  border: none;
+  background-color: var(--mainBlue);
+  color: var(--white);
+  border-radius: 4px;
+  cursor: pointer;
 }
 
 button:hover {
-    background-color: var(--midBlue);
+  background-color: var(--midBlue);
 }
 
 a {
@@ -105,7 +103,7 @@ a:hover {
   background-color: var(--paleBlue);
   border-radius: 20px;
   padding: 5px;
-  
+
 }
 
 .navbar {
@@ -129,17 +127,18 @@ a:hover {
 }
 
 .lyrics-box {
-    text-align: left;
-    background: var(--white);
-    padding: 20px;
-    border: 1px solid var(--white);
-    border-radius: 4px;
-    max-width: 600px;
-    margin: 0 auto;
-    white-space: pre-wrap;
-    max-height: 400px;
-    overflow-y: auto;
+  text-align: left;
+  background: var(--white);
+  padding: 20px;
+  border: 1px solid var(--white);
+  border-radius: 4px;
+  max-width: 600px;
+  margin: 0 auto;
+  white-space: pre-wrap;
+  max-height: 400px;
+  overflow-y: auto;
 }
+
 .task-card {
   background: var(--paleBlue);
   padding: 10px;
@@ -177,7 +176,7 @@ a:hover {
 .accordion-item:nth-child(2) h2 {
   padding-right: 0px;
   margin-right: 0px;
-} 
+}
 
 .row>* {
   padding-left: 0px;
@@ -187,10 +186,11 @@ a:hover {
   margin-left: 0px;
   margin-right: 0px;
 }
+
 .lyrics-container {
   display: flex;
   justify-content: space-between;
-  
+
 }
 
 .lyrics-box {
@@ -225,17 +225,20 @@ a:hover {
   align-items: center;
 
 }
+
 .aboutUsStory p {
   text-align: left;
   margin: 25px;
-  
+
 }
+
 #img-about {
   align-items: center;
   width: 200px;
   height: 200px;
 
 }
+
 .btn-dark {
   margin-left: 75%;
 
@@ -248,10 +251,16 @@ a:hover {
 
 .container-fluid .dark-mode {
   background-color: rgb(36, 36, 36);
-  
+
 }
 
-.navbar.dark-mode, .container.dark-mode {
+.navbar.dark-mode,
+.container.dark-mode {
   background-color: var(--darkModeBackground);
-  
+
+}
+
+.social-icon {
+  width: 32px;
+  height: auto;
 }
