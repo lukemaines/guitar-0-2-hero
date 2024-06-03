@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lyrics - Lyric Swap</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -18,33 +20,40 @@
     <header>
         <nav class="navbar fixed-top">
             <div class="container-fluid">
-              <a class="navbar-brand" href="/index.html"><img class="nav-img" src="assets\lyricswap.png" alt="Lyric Swap Logo"></a>
-              <button type="button" class="btn btn-dark">Dark</button>
-              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                <div class="offcanvas-header">
-                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Lyric Swap</h5>
-                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                <a class="navbar-brand" href="/index.html"><img class="nav-img" src="assets\lyricswap.png"
+                        alt="Lyric Swap Logo"></a>
+                <div class="" right-side">
+                    <button type="button" class="btn btn-dark">Dark</button>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                        aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Lyric Swap</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/about.html">About</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/contact.html">Contact</a>
+                                </li>
+                            </ul>
+                            <form class="d-flex mt-3" role="search">
+                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                <button class="btn btn-outline-success" type="submit">Search</button>
+                            </form>
+                        </div>
+                    </div>
                 </div>
-                <div class="offcanvas-body">
-                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                    <li class="nav-item">
-                      <a class="nav-link" href="/about.html">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/contact.html">Contact</a>
-                    </li>
-                  </ul>
-                  <form class="d-flex mt-3" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                  </form>
-                </div>
-              </div>
             </div>
-          </nav>
+        </nav>
     </header>
 
 
@@ -59,7 +68,7 @@
         <div id="googleTranslateElement"></div>
     </div>
     <script>
-        $(document).ready(function() {
+        $(document).ready(function () {
             let lyricsHistory = JSON.parse(localStorage.getItem('lyricsHistory'));
             let historyContainer = $('#history-container');
 
@@ -72,7 +81,7 @@
                 historyContainer.append(card);
             });
 
-            $('.task-card').click(function() {
+            $('.task-card').click(function () {
                 let index = $(this).data('index');
                 let item = lyricsHistory[index];
 
@@ -81,12 +90,12 @@
                 $('#lyrics-popup').show();
             });
 
-            $('#translate-button').click(function(event) {
+            $('#translate-button').click(function (event) {
                 event.preventDefault();
                 loadGoogleTranslate();
             });
 
-            $('#lyrics-popup').click(function() {
+            $('#lyrics-popup').click(function () {
                 $(this).hide();
             });
         });
@@ -156,9 +165,11 @@
             </div>
         </div>
     </footer>
-    
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-<script src="/script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="/script.js"></script>
 </body>
 
 </html>
